@@ -1,2 +1,228 @@
-<!---->
+<!--HTML's base building block is the tag. A tag is a building block. It describes what's inside it. Every tag has an opening and a closing tag-->
+
+<!--theres h1 - h6-->
 <h1>Hello World</h1>
+
+<p>This is smaller than h1</p>
+
+<!--there can be nested tags-->
+<!--there can be nested of infinfinetly amount of tags-->
+
+<div>
+	<h1>Title of the website</h1>
+
+	<div>
+		<h2>Sub title of website</h2>
+	</div>
+</div>
+
+<!--
+
+	incorrect way of closing tags
+
+	<div>
+	<h1>
+	HI
+	</div>
+	</h1>
+
+-->
+
+<!--types of texts-->
+
+<!--
+	h1, h2, h3, h4, h5, and h6 – Headings.
+	These are the six levels of headings and subheadings you can have.
+-->
+
+
+<h1>Hello World</h1>
+
+<h2>Hello World</h2>
+
+<h3>Hello World</h3>
+
+<h4>Hello World</h4>
+
+<h5>Hello World</h5>
+
+<h6>Hello World</h6>
+
+<!--
+	p – Paragraph. You'll put a paragraph of text together inside of a p tag.
+	Only text goes in p tags. Each one of these paragraphs is a p tag.
+-->
+
+<p>
+This is where I will write everything that is needed in a paragraph.
+Momento Mori, either you make sacrifices for your dreams or your dreams become the sacrifice.
+</p>
+
+<!--
+	a – Anchor. An a tag is a link to somewhere else. Every a tag needs a destination of where the link should take you.
+-->
+
+<a href="https://www.linkedin.com/in/matthew-garcia-b0301b217">Matthew Garcia LinkedIn</a>
+
+
+<!--
+	a – Anchor. An a tag is a link to somewhere else.
+	Every a tag needs a destination of where the link should take you.
+-->
+
+<div style="width: 100px; height: 100px; background-color: red;"></div>
+
+<!--
+	span – A container for small pieces of text. 
+-->
+
+<p>This is <span style="text-decoration: underline">Important</span> text</p>
+
+<!--
+	ol, ul, and li – Both ol and ul represent lists.
+	A ul is an unordered list: it's a list of things that could be shuffled and still mean the same thing.
+
+	An ol is an organized list: what comes first matters
+
+	In either list, each item in the list is an li.
+-->
+
+<ol>
+	<li>This will be number one</li>
+	<li>This will be number two</li>
+	<li>This will be number three</li>
+</ol>
+
+<ul>
+	<li>Doesn't matter what order thigns may be</li>
+	<li>All of these will be bulleted points</li>
+	<li>So list away!</li>
+</ul>
+
+<!--
+	button - A button can be used by JavaScript to respond to a user clicking it
+	or it can be used by a form to signal a user has completed filling it and it shoudl submit the data
+-->
+
+<button>Click me! I don't do anything</button>
+
+<!--
+	img – An image. You use this to load images onto the page. This can be confusing because you can use CSS to bring in images too.
+	The key difference is that when the image is apart of the content, like a diagram that shows data you're talking about or a picture that shows something from the article, it should be an img tag.
+	If it's a nice background image or something that's for decoration of your website, use CSS.
+	An img tag needs a src to say where the image is coming from and alt to say what is in the image for screen readers so that the image will still be useful to blind people, people who are hard of seeing
+-->
+
+<img
+		src="https://uploads-ssl.webflow.com/5f2ae1201e2589215ec62b04/5f3e95e38bcfa0562bd2ba6b_Image%202020-08-20%20at%2010.47.10%20AM.png"
+		alt="aether bio logo"
+		/>
+
+<img
+		src="https://i0.wp.com/folou.co/wp-content/uploads/2020/08/progreso-Neuralink.jpg?fit=1200%2C675&ssl=1"
+		alt="neuralink logo"
+		/>
+
+<img
+		src="https://www.cs.utexas.edu/sites/default/files/focs-partners/jane-street_300x300.png"
+		alt="Jane Street logo"
+		/>
+
+<!--
+	input - browser inputs
+	to gather input from the user
+	examples of inputs 
+	text
+	numbers
+	dates
+	colors
+	checkboxes
+	radio buttons
+-->
+
+<input />
+
+<!-- asks user input for texts -->
+<input type="text"/>
+
+<!-- asks user to pick color-->
+<input type="color"/>
+
+<!-- prompts user to open file and lets them pick a file-->
+<input type="file"/>
+
+<!-- asks user to pick a number-->
+<input type="number"/>
+
+<!-- asks user to pick month day year followed by hour minutes and seconds-->
+<input type="datetime-local"/>
+
+<!-- check box?-->
+<input type="radio"/>
+
+<!-- check box-->
+<input type="checkbox"/>
+
+<!--
+	textarea – Similar to an input but for a lot more text.
+	You'd type long-form responses in here that could linebreaks in it
+-->
+
+<textarea></textarea>
+
+<!--
+	select and option — Sometimes you want to limit a user to a certain group of options to select from.
+
+	A select is a user-interactive input that a user can select an option from a dropdown menu.
+	An option is one of the available options. Each option needs a value that will be sent back to the server if the user select that option.
+	What's inside of the option is what shown to the user
+-->
+
+<select>
+	<option value="minecraft">MineCraft</option>
+	<option value="resident-evil">Resident Evil</option>
+	<option value="metroid">Metroid Prime</option>
+</select>
+
+
+<!--
+	form – A group of html tags related to gathering data from a user.
+	This will be some combination of input, textarea, and select tags.
+	You can then use this form element to send that data to your server.
+	A form tag itself doesn't show anything; it's a just a container for the other tags.
+-->
+
+<form>
+	<input placeholder="First Name" />
+	<input placeholder="Last Name" />
+</form>
+
+<!--
+	table, tr, and td – like making a table in word or excel.
+	if you have a table of data, this is the best way to display it.
+-->
+
+<table>
+	<tbody>
+		<tr>
+			<td>(0,0)</td>
+			<td>(1,0)</td>
+		</tr>
+			<td>(0,1)</td>
+			<td>(1,1)</td>
+		<tr>
+	</tbody>
+</table>
+
+<!--
+	correct way to break line
+-->
+
+<p>This should be seperated</p>
+
+<p>By making a new paragraph and not using br</p>
+
+
+<!--
+	<p>using breaking line for new line <br/> is not good practice</p>
+-->
