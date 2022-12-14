@@ -1,0 +1,46 @@
+<!--
+	structure of any html files
+	int main equivalent
+
+
+	<html lang="en"></html> - This tag is the absolute most root tag of an HTML document.
+
+
+	<head></head>
+	All of your web pages are going to need important meta data.
+	They need to tell browsers how to handle browser resizings, what character sets your page uses, what the title is, what the favicon is (the little logo on your browser tab), where the CSS is located, etc.
+	The <head> tag contains all the important meta data.
+	Nothing that gets displayed to the user (like a div or an h1) will ever be put in the head. It's just meta data.
+
+	<meta>
+	meta tags are giving the browser information of how to handle your documents
+	The charset="UTF-8" bit says that your document is written using the UTF-8 character set.
+	This basically means you can use all character/letters/numbers/emojis/etc. that you expect to be able to use.
+
+	name="viewport" content="width=device-width, initial-scale=1.0" - This is letting the browser know how specifically to handle mobile devices like phones and small tablets.
+	If you don't put this, the browser may just output a really zoomed out view of your website and it's very hard to read.
+	This allows you to have mobile browsers treat your content better and more like you'd expect. Always put this too.
+
+
+	<title></title> allows you to set the title that shows up on the browser tab. It will also be the title of the search result when people search for it on Google.
+
+	<body></body> All of your visible HTML will go here. Your divs, spans, tables, h1s, etc. all here.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Blog</title>
+	</head>
+
+	<body>
+		<!-- all of content will go here -->
+
+		<head>Hello World</head>
+
+		<!--- allows you to click into new "window" make sure to keep all files in same dir --->
+		<a href="organizing.html">Go home</a>
+	</body>
+</html>
