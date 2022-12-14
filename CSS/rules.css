@@ -1,0 +1,19 @@
+/* CSS is really powerful and can accomplish a wide variety of things: colors, sizes, order, positioning, hiding, showing, animation, etc.*/
+
+h1 {
+	color: red;
+
+	/* this makes all occruences of h1 red h1 is the selector in this case*/
+	/* color is the property, there are about 350 properties */
+	/*red is the value in this case, there are about 150 different colors one can also use hex values like #ff0000 or rgb values (255, 0, 0) and hsl values (0, 100%, 50%)*/
+	/*; is needed to every property value to tell the computer one's done with that property and move on*/
+}
+
+h2 {
+	color: limegreen;
+	font-size: 60px;
+	font-weight: normal;
+	text-decoration: underline;
+	text-transform: uppercase;
+	border: 3px solid pink;
+}
