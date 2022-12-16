@@ -1,0 +1,80 @@
+
+/* we have two rules with the same class
+ * the one that gets applied is the one that comes last
+ */
+
+.title {
+	color: red;
+}
+
+.title {
+	color: green;
+}
+
+/*if a tag has more than one class
+ * its important to be specific and not seperate classes with spaces 
+ * but to concatenate them together
+ */
+
+.main-brand-3.title-3 { /*this one will affect h2 */
+	color: red;
+}
+
+.title-3 {
+	color: blue;
+}
+
+.title-4 { 
+	/*classes will always have higher order than tags since it's more specific */
+	color: blue;
+}
+
+h3 {
+	color: pink;
+}
+
+h1.main-brand-5 { /* this has 11 points */
+	color: green;
+}
+
+.main-brand-5.title-5 {
+
+/* think of specificity as a number game
+ * using tags will give you 1 point
+ * using classes gives you 10 points
+ * the one with more points will be used
+ 
+ this has 20 points
+ */
+
+	color: pink;
+}
+
+.main-brand-5 { /* this has 10 points */
+	color: brown;
+}
+
+#site-brand { /* ID is highest order with 100 points */
+	color: brown;
+}
+
+h1.nav-head.nav-main.other-useful-class {
+	/*
+	 * this class is way too specific; never have a class selector so long
+	 * its ridiculous and just to illustrate a point
+	 */
+
+	 color: green;
+ } 
+
+ /* never use !important */
+
+ #site-brand-2 {
+	 color: red;
+	 border: 1px solid red;
+ }
+
+ .nav-head-2 {
+	 color: green !important;
+	 border: 1px solid green;
+ }
