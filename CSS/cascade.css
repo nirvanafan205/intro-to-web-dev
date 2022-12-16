@@ -75,6 +75,8 @@ h1.nav-head.nav-main.other-useful-class {
  }
 
  .nav-head-2 {
-	 color: green !important;
+	 color: green !important; /* important is in the thousandths place */
 	 border: 1px solid green;
  }
+
+ /* only use classes */
