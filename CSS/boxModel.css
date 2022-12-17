@@ -1,0 +1,89 @@
+.title {
+	color: crimson;
+}
+
+/*
+Every tag in CSS has a display property associated with it by default.
+In fact, CSS has a lot of hidden defaults, just like by-default all text's color is black.
+With display, it varies by what type of tag we're talking about.
+
+divs are display: block; by default while spanS are display: inline;
+ */
+
+	.ex-box {
+		border: 3px solid #aaa;
+		background-color: #eee;
+		height: 200px;
+		width: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		float: left;
+		margin-right: 10px;
+		border-radius: 5px;
+		font-size: 30px;
+	}
+
+	.ex-box:last-of-type {
+		clear: right;
+	}
+
+	/*	
+
+	inline - makes whatever the tag is behave like text
+
+	block - divS and pS by default are display: block;
+	gives control over height, width, padding, margins, etc
+
+	inline-block - a hybrid of the previous two. Makes browser try to place the tag inline
+	but will allow you to control height, width, padding, and margins
+
+	flex and inline-flex - similar to block that it affects the tags around it like block doess
+	it gains new power on how it's interior tags are layed out
+
+
+	grid and inline-grid - More advanced display mode that allows one more power to layout tags inside of them
+
+	table - makes osmething act like a table //just use table
+
+	margin - space outside of the element between it and other elements. It is outside of the border.
+	This is used to space elements out from other elements
+
+	border - if your element has a border, it comes next
+
+	padding - inside the border is the padding. This is spacing INSIDE element
+
+	 */
+
+
+	.box-1 {
+		border: 1px solid black;
+		color: white;
+		background-color: blue;
+		height: 150px;
+		width: 300px;
+	}
+
+	.box-2 {
+		border: 1px solid black;
+		color: white;
+		background-color: red;
+		height: 100px;
+		width: 300px;
+	}
+
+	.box-3 {
+		border: 1px solid black;
+		color: white;
+		background-color: green;
+		height: 200px;
+		width: 100px;
+	}
+
+	.floated div{
+		float: left;
+	}
+
+	* { /* always use this for your project */
+		box-sizing: border-box;
+	}
