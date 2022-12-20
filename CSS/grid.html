@@ -3,34 +3,54 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Box Models</title>
-		<link rel="stylesheet" href="boxModel.css">
+		<title>Grid</title>
+		<link rel="stylesheet" href="grid.css">
 	</head>
+
+	<!---
+		row-gap and column-gap : are how you do gutters in grid ie the space between items in the grid
+
+		grid-template-column : allows you to set up how the grid is constructed
+	--->
 
 	<body>
 
 		<div class="grid">
 			<img
 					class="grid-picture"
-					src=""
-					alt="something"
+					src="ein.gif"
+					alt="doggy"
 					/>
 			<img
 					class="grid-picture"
-					src=""
-					alt="something"
+					src="chainsawdog.gif"
+					alt="chainsaw dog"
 					/>
 			<img
 					class="grid-picture"
-					src=""
-					alt="something"
+					src="hawk.gif"
+					alt="pig"
 					/>
 			<img
 					class="grid-picture"
-					src=""
-					alt="something"
+					src="shinChan.gif"
+					alt="shin chan"
 					/>
+		</div>
 
+		<div class="my-page">
+			<header class="my-page-header">The Header</header>
+			<div class="my-page-body">The Body</div>
+			<div class="my-page-sidebar">The Sidebar</div>
+			<footer class="my-page-footer">The Footer</footer>
+		</div>
+
+		<!--
+			grid-area : allows you to name a section and refer to it later as that. Doesn't need to match the class name
+
+			grid-template-columns : allows to have columns that reach across rows
+			
+		-->
 
 	</body>
 </html>
