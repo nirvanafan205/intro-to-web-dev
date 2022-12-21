@@ -1,0 +1,67 @@
+@keyframes rainbow {
+
+    100%,
+    0% {
+        color: red;
+    }
+
+    8% {
+        color: blueviolet;
+    }
+
+    16% {
+        color: deeppink;
+    }
+
+    25% {
+        color: magenta;
+    }
+
+    33% {
+        color: royalblue;
+    }
+
+    41% {
+        color: thistle;
+    }
+
+    50% {
+        color: aqua;
+    }
+
+    58% {
+        color: orange;
+    }
+
+    66% {
+        color: plum;
+    }
+
+    75% {
+        color: midnightblue;
+    }
+
+    83% {
+        color: hotpink;
+    }
+
+    91% {
+        color: forestgreen
+    }
+}
+
+.title {
+    animation: rainbow 5s infinite linear;
+    font-size: 50px;
+    text-align: center;
+}
+
+.nav-bar {
+    border: 3px solid black;
+    height: 15mm;
+}
+
+.list {
+   list-style: none; 
+   float: left;
+}
