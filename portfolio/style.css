@@ -1,0 +1,135 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+a:hover {
+    color: var(--hotmag);
+    text-decoration: none;
+
+}
+
+/* section 1 */
+#intro {
+    padding-bottom: 10rem;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-family: var(--mono);
+}
+
+.name span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: cornflowerblue;
+    display: block;
+}
+
+#intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+
+/* section 2 */
+#contact h2 {
+    font-family: cursive;
+    color: violet;
+}
+
+#contact {
+    width: 400px;
+    background-color: slateblue;
+    padding: 3rem 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact a {
+    margin-top: 3rem;
+    color: tomato;
+}
+
+#contact .hello {
+    color: var(--white);
+}
+
+/* Navigation bar */
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+
+nav h1 a {
+    font-family: var(--sans);
+    text-align: center;
+}
+
+/* navbar organizing */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* puts all links together */
+    flex-flow: row wrap;
+    justify-content: center; /* centers everything in the row */
+    align-items: center;
+    gap: 2rem; /* puts gaps between each elements */
+}
+
+nav li:first-child {
+    flex-basis: 100%; /* pushes name to it's own line */
+    text-align: center;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block; /* makes area clickable */
+
+}
+
+nav a:hover {
+    color: var(--magenta);
+}
