@@ -6,6 +6,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/cd01da16da.js" crossorigin="anonymous"></script>
     <title>Matthew Garcia</title>
 </head>
 
@@ -13,23 +16,40 @@
 
     <!--Navigation Bar-->
     <nav>
-        <ul class="links">
+        <ul>
             <li>
-            <h1><a href="index.html">Matthew Garcia</a></h1>
+                <h1>
+                    <a href="index.html">
+                        <span class="fa-solid fa-stars" aria-hidden="true"></span>
+                        <i class="fa-solid fa-star-and-crescent"></i>
+                        <span>Matthew Garcia</span>
+                    </a>
+                </h1>
             </li>
-
-            <li><a href="https://www.linkedin.com/in/matthew-garcia-b0301b217/">LinkedIn</a></li>
 
             <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
+            <!---This is icon-->
             <li>
-                <a href="https://github.com/nirvanafan205">Github</a>
-            <li>
-                <a
-                    href="https://docs.google.com/document/d/173BmAy6FSsgvtzgqa0NrxFyToxRf65wWM_hAgYt2jvQ/edit?usp=sharing" target="_blank" >Resume</a>
+                <a href="https://www.linkedin.com/in/matthew-garcia-b0301b217/" target="_blank">
+                    <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+                    <span class="sr-only">Linkedin</span>
+                </a>
             </li>
 
-            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="https://github.com/nirvanafan205" target="_blank">
+                    <span class="fa-brands fa-github-alt" aria-hidden="true"></span>
+                    <span class="sr-only">Github</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://docs.google.com/document/d/173BmAy6FSsgvtzgqa0NrxFyToxRf65wWM_hAgYt2jvQ/edit?usp=sharing"
+                    target="_blank" class="button">Resume</a>
+                </a>
+            </li>
         </ul>
     </nav>
 
@@ -56,20 +76,62 @@
 
     </section>
 
-    <section id="contact">
+    <div class="gradient"></div>
 
-        <p class="hello">
-        <h2>Contact me!</h2>
-        I'm a Junior standing computer science student.
-        Eager to start my career as a software engineer.
-        Ready to start building the next industrial revolution!
-        </p>
+    <!--strecthes across screen the color-->
+    <div class="section-plum">
+        <section id="contact">
 
-        <p>
-            <a href="mailto:matthewgarcia@yahoo.com">Email</a>
-        </p>
+            <p class="hello">
+            <h2>Contact me!</h2>
+            I'm a Junior standing computer science student.
+            Eager to start my career as a software engineer.
+            Ready to start building the next industrial revolution!
+            </p>
 
-    </section>
+            <p>
+                <a href="mailto:matthewgarcia@yahoo.com" class="button">Email</a>
+            </p>
+
+        </section>
+    </div>
+
+    <div class="gradient"></div>
+
+    <!--End-->
+    <footer>
+
+        <h2 class="end">Matthew Garcia &middot; Software Engineer</h2>
+
+        <ul>
+
+            <li>
+                <a href="https://www.linkedin.com/in/matthew-garcia-b0301b217/" target="_blank">
+                    <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+                    <span class="sr-only">Linkedin</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://github.com/nirvanafan205" target="_blank">
+                    <span class="fa-brands fa-github-alt" aria-hidden="true"></span>
+                    <span class="sr-only">Github</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="mailto:matthewgarcia@yahoo.com" target="_blank">
+                    <span class="fa-solid fa-square-envelope" aria-hidden="true"></span>
+                    <span class="sr-only">Email</span>
+                </a>
+            </li>
+
+
+        </ul>
+
+        <p><small>&copy; 2023 Matthew Garcia. All rights reserved</small></p>
+
+    </footer>
 
 </body>
 
