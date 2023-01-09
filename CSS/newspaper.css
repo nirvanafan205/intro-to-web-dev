@@ -56,12 +56,37 @@
     text-align: center;
 }
 
-.nav-bar {
-    border: 3px solid black;
-    height: 15mm;
+.nav-bar-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border: 2px solid black;
+    margin: 0;
+    padding: 30px;
 }
 
 .list {
-   list-style: none; 
-   float: left;
+    list-style: none;
+}
+
+.article-one {
+    display: flex;
+    float: left;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+.article-two {
+    display: flex;
+    float: left;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+.article-three {
+    display: flex;
+    float: left;
+    padding: 30px;
+    border: 2px solid black;
 }

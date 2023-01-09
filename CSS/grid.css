@@ -37,7 +37,7 @@
 .my-page {
 	display: grid;
 	grid-template-areas:
-      "nav-header  nav-header  nav-header  nav-side"
-      "main-body   main-body   .           nav-side"
-      "footer      footer      footer      footer";
+      "nav-header  nav-header  .  		   nav-side"
+      "main-body   main-body   .  		   nav-side"
+      "footer      footer      footer      nav-side";
 }
